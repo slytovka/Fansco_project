@@ -1,0 +1,98 @@
+@import "slate-variables.scss";
+@import "bootstrap-variables.scss";
+@import "bootstrap-sprockets.scss";
+@import "bootstrap.scss";
+@import "slate.scss";
+
+body {
+  background: image-url('background3.jpg') fixed;
+  background-size: cover;
+}
+#navbar-brand {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+#navbar-brand:hover {
+  text-decoration: none;
+}
+#tennis-table {
+  text-align: center;
+}
+.comment-body {
+  padding-left: 10px;
+  text-transform: capitalize;
+  min-height: 50px;
+}
+.comment-header {
+  text-transform: capitalize;
+  padding: 10px;
+  border-bottom: 1px black solid;
+  background-color: black;
+}
+.event_content {
+  text-align: center;
+  height: 100px;
+  line-height: 85px;
+  background-color: black;
+  color: white;
+}
+.event_content h2 {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.page-header {
+  color: black;
+}
+body {
+  margin-top: 40px;
+}
+.timestamp {
+  float: right;
+  margin-right: 10px;
+}
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 10%;
+}
+.soccer-table {
+  background-color: rgba(189,189,189,0.8);
+  text-align: center;
+  color: black;
+  max-width: 700px;
+  margin: 10px auto;
+}
+.soccer-table h3 {
+  color: white;
+}
+.comment {
+  background-color: rgba(128, 128, 128, 0.9);
+  color: white;
+}
+.comment-form h2 {
+  color: black;
+}
+.link {
+  float: right;
+}
+.devise {
+  background-color: black;
+  width: 280px;
+  padding: 30px;
+}
+.alert {
+  margin-top: 5vh;
+}
+.page-header {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 5px 15px;
+  border: none;
+}

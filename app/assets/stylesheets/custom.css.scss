@@ -1,0 +1,42 @@
+@import "slate-variables.scss";
+@import "bootstrap-variables.scss";
+@import "bootstrap-custom-variables.scss";
+@import "bootstrap-sprockets.scss";
+@import "bootstrap.scss";
+@import "slate.scss";
+
+#navbar-brand {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.8em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#navbar-brand:hover {
+  color: #aaa;
+  text-decoration: none;
+}
+.comment-body {
+  background-color: #aaa;
+  padding-left: 10px;
+  text-transform: capitalize;
+}
+.comment-header {
+  background-color: #0099FF;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+.event_content {
+  text-align: center;
+  height: 200px;
+  background-color: #fff;
+}
+
+.comment_form {
+  //background-color: #aaa;
+}
+

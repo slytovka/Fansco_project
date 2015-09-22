@@ -1,0 +1,46 @@
+<div class="match-page">
+<div class="page-header">
+  <h1>Today's Matches</h1>
+</div>
+
+<div class="soccer-table">
+<h2>South America</h2>
+<div class="table-responsive table-striped">
+<% if @matches["boxscore"]["matches"] == nil %>
+<table class="table table-striped table-bordered table-hover">
+    <tbody>
+      <tr><td><h3>No Matches in South America for today</h3></td></tr>
+    </tbody>
+  </table>
+  <% else %>
+ <% @matches["boxscore"]["matches"]["match"].each do |match| %>
+  <table class="table table-striped table-bordered table-hover">
+    <tbody>
+      <tr><td><h3><%= match["tournament_group"]["name"] %>--<%=match["category"]["name"] %>--<%=match["home"]["country"] %></h3></td></tr>
+      <tr><td><h3><%= get_url_label_for_match(match) %></h3></td></tr>
+    </tbody>
+  </table>
+ <% end %>
+ <% end %>
+</div>
+<br/>
+<h2>North America</h2>
+<div class="table-responsive table-striped">
+<% if @nmatches["boxscore"]["matches"] == nil %>
+<table class="table table-striped table-bordered table-hover">
+    <tbody>
+      <tr><td><h3>No Matches in North America for today</h3></td></tr>
+    </tbody>
+  </table>
+  <% else %>
+ <% @nmatches["boxscore"]["matches"]["match"].each do |match| %>
+  <table class="table table-striped table-bordered table-hover">
+    <tbody>
+      <tr><td><h3><%= match["tournament_group"]["name"] %>--<%=match["category"]["name"] %>--<%=match["home"]["country"] %></h3></td></tr>
+      <tr><td><h3><%= get_url_label_for_match(match) %></h3></td></tr>
+    </tbody>
+  </table>
+ <% end %>
+ <% end %>
+</div>
+</div>
